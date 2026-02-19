@@ -1,0 +1,3 @@
+# RendezTech
+
+A RendezTech egy IT tanácsadó és eseményszervező cég, amely Budapest szívében található. Célunk, hogy a legújabb technológiai megoldásokkal támogassuk ügyfeleinket, és segítsük őket a digitális átalakulás útján. Szakértő csapatunk széleskörű tapasztalattal rendelkezik az informatika különböző területein, beleértve a szoftverfejlesztést, a rendszermérnökséget és az informatikai tanácsadást. Eseményeink során a legújabb trendeket mutatjuk be, és lehetőséget biztosítunk a kapcsolatteremtésre a szakma legjobbjai között.
