@@ -1,60 +1,62 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hu">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RendezTech</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
     <style>
         body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
-        header { background: linear-gradient(135deg, #6f86d6, #48c6ef); color: white; padding: 20px; text-align: center; }
-        .services, .portfolio { display: flex; flex-wrap: wrap; justify-content: center; padding: 20px; }
-        .service-card, .portfolio-item { border: 1px solid #eee; border-radius: 8px; margin: 10px; padding: 20px; width: 300px; transition: transform 0.3s; }
-        .service-card:hover, .portfolio-item:hover { transform: scale(1.05); }
-        footer { text-align: center; padding: 10px; background: #333; color: white; }
+        header { background: linear-gradient(to right, #1e3c72, #2a69ac); color: white; padding: 20px; text-align: center; }
+        .services { display: flex; justify-content: space-around; padding: 20px; }
+        .card { border: 1px solid #ccc; border-radius: 5px; padding: 20px; width: 30%; text-align: center; }
+        .portfolio { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 10px; padding: 20px; }
+        .footer { background: #333; color: white; text-align: center; padding: 10px; position: relative; bottom: 0; width: 100%; }
+        @media (max-width: 768px) { .services, .portfolio { flex-direction: column; } }
     </style>
 </head>
 <body>
     <header>
-        <h1>Welcome to RendezTech</h1>
-        <p>Your gateway to modern technology solutions!</p>
+        <h1>Üdvözöljük a RendezTech-nél!</h1>
+        <nav>
+            <a href="#services">Szolgáltatások</a> |
+            <a href="#portfolio">Portfólió</a> |
+            <a href="#contact">Kapcsolat</a>
+        </nav>
     </header>
-    <section class="about">
-        <h2>About Us</h2>
-        <p>At RendezTech, we are committed to providing top-notch technology services that cater to your needs. Whether it's web development, mobile applications, or IT consulting, we have the expertise to help you succeed.</p>
-    </section>
-    <section class="services">
-        <h2>Our Services</h2>
-        <div class="service-card">
-            <h3><i class="fas fa-laptop-code"></i> Web Development</h3>
-            <p>We build responsive and high-performance websites using the latest technologies.</p>
-        </div>
-        <div class="service-card">
-            <h3><i class="fas fa-mobile-alt"></i> Mobile Apps</h3>
-            <p>Our team delivers innovative mobile applications tailored to your business needs.</p>
-        </div>
-        <div class="service-card">
-            <h3><i class="fas fa-cogs"></i> IT Consulting</h3>
-            <p>Get expert advice on technology strategies and solutions to improve your business operations.</p>
-        </div>
-    </section>
-    <section class="portfolio">
-        <h2>Our Portfolio</h2>
-        <div class="portfolio-item">
-            <h3>Project One</h3>
-            <p>A short description of this project.</p>
-        </div>
-        <div class="portfolio-item">
-            <h3>Project Two</h3>
-            <p>A short description of this project.</p>
-        </div>
-        <div class="portfolio-item">
-            <h3>Project Three</h3>
-            <p>A short description of this project.</p>
-        </div>
-    </section>
-    <footer>
-        <p>Contact us at: contact@rendeztech.com</p>
+
+    <main>
+        <section id="services">
+            <h2>Szolgáltatások</h2>
+            <div class="services">
+                <div class="card">
+                    <h3>Webfejlesztés</h3>
+                    <p>Modern weboldalak készítése a legújabb technológiákkal.</p>
+                </div>
+                <div class="card">
+                    <h3>Mobil alkalmazás fejlesztés</h3>
+                    <p>Innovatív mobil alkalmazások tervezése és fejlesztése.</p>
+                </div>
+                <div class="card">
+                    <h3>UI/UX design</h3>
+                    <p>Felhasználóbarát és esztétikus dizájn megoldások.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="portfolio">
+            <h2>Portfólió</h2>
+            <div class="portfolio">
+                <img src="project1.jpg" alt="Project 1">
+                <img src="project2.jpg" alt="Project 2">
+                <img src="project3.jpg" alt="Project 3">
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2026 RendezTech. Minden jog fenntartva.</p>
+        <p>Kövessen minket a közösségi médiában!</p>
     </footer>
 </body>
 </html>
